@@ -1,6 +1,6 @@
 /**
  * MENU DE RESTAURANT
- * Nom de l'étudiant : [Votre nom]
+ * Nom de l'étudiant : [Jessi McMullen]
  * Date : [Date]
 
    Instructions complètes ici: https://tim-montmorency.com/compendium/582-211-web2/exercices/cours3-menu-resto/index.html
@@ -11,19 +11,117 @@
    ======================================== */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Changez pour votre choix de police de caractères de Google Fonts*/
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333; /* Ajutez avec votre couleur de texte principale */
-    background-color: #f9f9f9; /* Ajutez avec votre couleur de fond principale */
+  font-family: 'livvic', sans-serif;
+  /* Changez pour votre choix de police de caractères de Google Fonts*/
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #97422d;
+  /* Ajutez avec votre couleur de texte principale */
+  background-color: #fffae9;
+  /* Ajutez avec votre couleur de fond principale */
 }
 
 /* ========================================
    VOTRE CODE CSS ICI
    ======================================== */
+.menu {
+  width: 100%;
+
+  text-align: center;
+  max-width: 800px;
+  min-width: 400px;
+
+}
+
+.menu_titre {
+  font-family: sour gummy;
+  color: #6d1c1c;
+  margin-bottom: 0.5rem ;
+}
+
+h2.menu-category_titre {
+  font-family: sour gummy;
+}
+
+.menu-item {
+  margin: 0.5rem 0rem;
+  vertical-align: top;
+  height: auto;
+
+
+}
+
+.menu-item_titre {
+  font-weight: 600;
+  text-align: left; /* aligné le texte a gauche dans son élément parent */
+  color: #6d1c1c;
+  width: 60%; /* synchronisé avec le width de .menu-item_prix pour qu'ils apparaissent un à côté de l'autre horizontallement */
+  margin: 0 0;
+}
+
+.menu-item_badge {
+  color: #6d1c1c;
+  padding: 0rem 0.3rem;
+  width: auto;
+  background-color: #ffdca0;
+  border-radius: 5px 5px;
+  margin: 0 0;
+}
+
+.menu-item_badge + .menu-item_prix {
+  width: 10%;
+}
+
+.menu-item_titre:hover ~ .menu-item_prix, .menu-item_titre:hover ~ .menu-item_badge, .menu-item_titre:hover {
+  font-weight: 600;
+  font-size: 1.2rem;
+  /*Pour que les 3 éléments réagissent au hover */
+}
+
+.menu-item_titre:hover {
+  width: 55%;
+}
+
+.menu-item_titre,
+.menu-item_prix, .menu-item_badge {
+  display: inline-block;
+  
+}
+
+.menu-item_prix {
+  text-align: right;
+  width: 40%;
+  float: right;
+  margin: 0 0;
+}
+
+.ligne {
+  width: 100%;
+  height: 1px;
+  border-style: solid;
+  border-color: #97422d;
+  border-width: 1.5px 0px 0px 0px ;
+  display: inline-block;
+
+}
+.menu-item_ingredients {
+  width: 100%;
+  text-align: left;
+}
+
+.menu-category_list {
+  display: inline-block;
+  width: 400px; 
+}
+
+.menu_titre {
+  padding: 1rem 0rem;
+  background-color: #ebd4bb;
+}
+
